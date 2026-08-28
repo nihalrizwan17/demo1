@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acme — Built for what's next</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .logo { font-weight: 700; font-size: 20px; letter-spacing: -0.5px; }
+    nav a { margin-left: 24px; color: #475569; text-decoration: none; font-size: 15px; }
+    nav a:hover { color: #0f172a; }
+    .hero {
+      text-align: center;
+      padding: 120px 20px 100px;
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      max-width: 760px;
+      margin: 0 auto 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #475569;
+      max-width: 560px;
+      margin: 0 auto 36px;
+    }
+    .btn {
+      display: inline-block;
+      background: #4f46e5;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.15s ease;
+    }
+    .btn:hover { background: #4338ca; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 28px;
+      background: #fff;
+    }
+    .card h3 { font-size: 18px; margin-bottom: 8px; }
+    .card p { color: #64748b; font-size: 15px; }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #94a3b8;
+      font-size: 14px;
+      border-top: 1px solid #e2e8f0;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 38px; }
+      header { padding: 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Acme</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Built for what's next</h1>
+    <p>A fast, modern platform to launch your product and grow your audience without the busywork.</p>
+    <a class="btn" href="#get-started">Get started</a>
+  </section>
+
+  <section class="features" id="features">
+    <div class="card">
+      <h3>Lightning fast</h3>
+      <p>Ship in minutes with a streamlined workflow designed for speed and clarity.</p>
+    </div>
+    <div class="card">
+      <h3>Flexible</h3>
+      <p>Adapt the platform to your needs with powerful, easy-to-use building blocks.</p>
+    </div>
+    <div class="card">
+      <h3>Secure</h3>
+      <p>Enterprise-grade security keeps your data safe so you can focus on building.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Acme, Inc. All rights reserved.
+  </footer>
+</body>
+</html>
