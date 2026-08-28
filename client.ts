@@ -78,8 +78,8 @@ heroEls.forEach((el, i) => {
   }, 150 + i * 180);
 });
 
-// Scroll reveal for cards
-const cards = document.querySelectorAll<HTMLElement>(".card");
+// Scroll reveal for cards and plans
+const cards = document.querySelectorAll<HTMLElement>(".card, .plan");
 const io = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

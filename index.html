@@ -13,6 +13,11 @@
       line-height: 1.6;
     }
     header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.7);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -75,6 +80,37 @@
       font-size: 14px;
       border-top: 1px solid #e2e8f0;
     }
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    .plan {
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 32px 28px;
+      background: #fff;
+      text-align: center;
+    }
+    .plan.featured {
+      border-color: #4f46e5;
+      box-shadow: 0 12px 30px rgba(79, 70, 229, 0.15);
+    }
+    .plan .price { font-size: 40px; font-weight: 800; letter-spacing: -1px; margin: 12px 0; }
+    .plan .price span { font-size: 16px; font-weight: 500; color: #94a3b8; }
+    .plan ul { list-style: none; color: #64748b; font-size: 15px; margin: 16px 0 24px; }
+    .plan li { padding: 6px 0; }
+    .contact {
+      text-align: center;
+      padding: 90px 20px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+    .contact h2 { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin-bottom: 12px; }
+    .contact p { color: #475569; max-width: 480px; margin: 0 auto 28px; font-size: 18px; }
+    section[id] { scroll-margin-top: 80px; }
     @media (max-width: 600px) {
       .hero h1 { font-size: 38px; }
       header { padding: 16px 20px; }
@@ -110,6 +146,45 @@
       <h3>Secure</h3>
       <p>Enterprise-grade security keeps your data safe so you can focus on building.</p>
     </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="plan">
+      <h3>Starter</h3>
+      <div class="price">$0<span>/mo</span></div>
+      <ul>
+        <li>Up to 3 projects</li>
+        <li>Community support</li>
+        <li>1 GB storage</li>
+      </ul>
+      <a class="btn" href="#get-started">Choose</a>
+    </div>
+    <div class="plan featured">
+      <h3>Pro</h3>
+      <div class="price">$19<span>/mo</span></div>
+      <ul>
+        <li>Unlimited projects</li>
+        <li>Priority support</li>
+        <li>100 GB storage</li>
+      </ul>
+      <a class="btn" href="#get-started">Choose</a>
+    </div>
+    <div class="plan">
+      <h3>Team</h3>
+      <div class="price">$49<span>/mo</span></div>
+      <ul>
+        <li>Everything in Pro</li>
+        <li>SSO &amp; roles</li>
+        <li>1 TB storage</li>
+      </ul>
+      <a class="btn" href="#get-started">Choose</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Ready to get started?</h2>
+    <p>Join thousands of teams building what's next with Acme. No credit card required.</p>
+    <a class="btn" href="#get-started">Start free</a>
   </section>
 
   <footer>
